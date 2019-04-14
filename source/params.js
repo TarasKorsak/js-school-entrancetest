@@ -17,34 +17,34 @@ export const params = {
 			}]
 		},
 		{
-			background: "#20F",
+			background: "#22F",
 			updateTime: 2000,
 			elements: [{
-				background: "#20F",
+				background: "#22F",
 				width: 25
 			},
 			{
-				background: "#20F",
+				background: "#22F",
 				width: 25
 			},
 			{
-				background: "#20F",
+				background: "#22F",
 				width: 25
 			}]
 		},
 		{
-			background: "#40F",
+			background: "#46F",
 			updateTime: 3000,
 			elements: [{
-				background: "#40F",
+				background: "#46F",
 				width: 30
 			},
 			{
-				background: "#40F",
+				background: "#46F",
 				width: 30
 			},
 			{
-				background: "#40F",
+				background: "#46F",
 				width: 30
 			}]
 		}

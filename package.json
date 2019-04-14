@@ -1,24 +1,25 @@
 {
-  "name": "js-school-entrancetest",
+  "name": "webpack-app",
   "version": "1.0.0",
-  "description": "Thi is my entrance task solution for PDFfiller JS school 2",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "webpack": "^4.30.0"
-  },
+  "repository": {},
+  "license": "MIT",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "webpack"
+    "start": "webpack --watch",
+    "serv": "static build",
+    "dev": "webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TarasKorsak/js-school-entrancetest.git"
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^2.28.0",
+    "node-static": "^0.7.9",
+    "webpack": "^2.3.3",
+    "webpack-cli": "^3.3.0"
   },
-  "author": "TarasKorsak",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TarasKorsak/js-school-entrancetest/issues"
-  },
-  "homepage": "https://github.com/TarasKorsak/js-school-entrancetest#readme"
+  "dependencies": {
+    "webpack-dev-server": "^2.4.2"
+  }
 }
