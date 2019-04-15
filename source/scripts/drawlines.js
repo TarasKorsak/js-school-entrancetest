@@ -1,5 +1,5 @@
 export default function (array) {
-	// var div = document.createElement("div");
+
 	var linesList = '';
 	const linesAmount = array.lines.length;
 	const lineHeight = 100/linesAmount + "vh";
@@ -12,7 +12,5 @@ export default function (array) {
 		linesList += '</div>';
 	}
 	
-	console.log(linesList);
-	// div.innerHTML = linesList;
 	return linesList;
 }

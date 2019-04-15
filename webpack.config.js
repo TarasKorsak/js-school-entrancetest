@@ -1,7 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-// const 
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const glob = require('glob');
+const PurifyCSSPlugin = require('purgecss-webpack-plugin');
+const postcss = require('postcss');
+const devServer = require('webpack-dev-server');
 
 const PATHS = {
     source: path.join(__dirname, 'source'),
@@ -25,6 +29,16 @@ module.exports = {
 							presets: ['@babel/preset-env']
 						}
 					}
+				},
+				{
+					test: /\.scss$/,
+					use: ExtractTextPlugin.extract({
+						fallback: 'style-loader',
+						use: [
+							'css-loader', 
+							'sass-loader'
+						]
+					})
 				}
 			]
 		},
@@ -35,15 +49,16 @@ module.exports = {
 			open: true
 		},
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Webpack app'
-				}),
-        new webpack.optimize.UglifyJsPlugin({
-						sourceMap: true,
-						compress: {
-							warnings: false
-						}
-				})
-				
+			new HtmlWebpackPlugin({
+					title: 'JS-school-entrancetask'
+			}),
+			new webpack.optimize.UglifyJsPlugin({
+					sourceMap: true,
+					compress: {
+						warnings: false
+					},
+			}),
+			new ExtractTextPlugin('./index.css')
+			
     ]
 };
