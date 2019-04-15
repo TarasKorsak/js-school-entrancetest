@@ -8,7 +8,7 @@ const postcss = require('postcss');
 const devServer = require('webpack-dev-server');
 
 const PATHS = {
-    source: path.join(__dirname, 'source'),
+    source: path.join(__dirname, 'src'),
     build: path.join(__dirname, 'build')
 };
 
@@ -35,7 +35,11 @@ module.exports = {
 					use: ExtractTextPlugin.extract({
 						fallback: 'style-loader',
 						use: [
-							'css-loader', 
+							'css-loader',
+							{
+								loader: 'postcss-loader',
+								options: { sourceMap: true, config: { path: 'postcss.config.js' } }
+							},
 							'sass-loader'
 						]
 					})

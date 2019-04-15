@@ -18,7 +18,7 @@ export const params = {
 		},
 		{
 			background: "#22F",
-			updateTime: 2000,
+			updateTime: 3000,
 			elements: [{
 				background: "#22F",
 				width: 25
@@ -34,7 +34,7 @@ export const params = {
 		},
 		{
 			background: "#46F",
-			updateTime: 3000,
+			updateTime: 6000,
 			elements: [{
 				background: "#46F",
 				width: 30
