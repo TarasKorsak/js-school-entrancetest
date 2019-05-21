@@ -20,4 +20,4 @@ npm run prod
 ```
 
 
-[Online is demo here](https://abzchallenge.ml)
+[Online is demo here](https://taraskorsak.github.io/js-school-entrancetest/build/)
