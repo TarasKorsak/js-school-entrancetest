@@ -10,7 +10,7 @@
 	"bugs": {
     "url": "https://github.com/TarasKorsak/js-school-entrancetest/issues"
   },
-  "homepage": "http://abzchallenge.ml",
+  "homepage": "https://taraskorsak.github.io/js-school-entrancetest/build/",
   "license": "MIT",
   "scripts": {
     "prod": "webpack",

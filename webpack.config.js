@@ -52,7 +52,8 @@ module.exports = {
 		},
     plugins: [
 			new HtmlWebpackPlugin({
-					title: 'JS-school-entrancetask'
+					title: 'JS-school-entrancetask',
+					template: PATHS.source + '/index.html'
 			}),
 			new webpack.optimize.UglifyJsPlugin({
 					sourceMap: true,

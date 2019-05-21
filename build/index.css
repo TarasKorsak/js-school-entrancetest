@@ -1,1 +1,1 @@
-*{margin:0;padding:0}.line{display:-webkit-box;display:-ms-flexbox;display:flex}
+*{margin:0;padding:0}.line{display:-webkit-box;display:-ms-flexbox;display:flex}.plate{position:absolute;top:40px;right:-55px;background-color:#fd7f01;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);height:45px;line-height:45px;padding:0 45px;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}.plate:hover{background-color:rgba(253,127,1,.8);cursor:pointer}a{text-decoration:none;color:#fff;text-transform:uppercase}

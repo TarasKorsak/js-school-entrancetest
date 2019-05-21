@@ -3,7 +3,7 @@ import { params } from './scripts/params';
 import './index.scss';
 
 var list = drawLines(params);   //  с помощью этой функции размечаем экран  согласно условию задания. массив исходных данных находится в файле ./scripts/params.js
-document.body.innerHTML = list;
+document.body.innerHTML += list;
 var lines = document.getElementsByClassName('line'); 
 for ( let i = 0; i < lines.length; i++) {
 	let updateTime = lines[i].dataset.updateTime;       // поочередно обращаясь к  каждому блочному элементу  с классом .line, считываем значение временного интервала 
