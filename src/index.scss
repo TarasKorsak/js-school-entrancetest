@@ -5,6 +5,9 @@
 .line {
 	display: flex;
 }
+body {
+	overflow: hidden;
+}
 .plate {
   position: absolute;
   top: 40px;
